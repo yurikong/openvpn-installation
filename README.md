@@ -27,10 +27,13 @@
 
 # Note
 ### The purpose of root login is only for convenience.
-###### For security purposes, use certificate to login
+###### For security purposes, use certificate to login, see modifications below
+	7. not needed
 	8. vi ~/../etc/ssh/sshd_config
 		* PermitRootLogin no
 		* StrictModes yes
 		* PasswordAuthentication no
 	10. ssh -i [path-to-certificate] [user]@[server-ip]
-###### run step 6 again before proceeding to the rest
+###### run step 6 again before proceeding to the rest!
+
+Happy Tunneling! 😀
