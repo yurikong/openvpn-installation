@@ -1,5 +1,5 @@
 # OpenVPN Installation Guide
-###### on server
+###### on server [ubuntu 18.04/20.04]
 	1. sudo apt update
 	2. sudo apt upgrade
 	3. sudo apt autoremove
