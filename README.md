@@ -6,6 +6,7 @@
 	sudo apt clean
 	sudo passwd root -> new password
 	su root -> enter password
+	passwd [user] -> new password
 	cd ~/../etc/ssh
 	vi sshd_config -> modify
 		LoginGraceTime 5m
