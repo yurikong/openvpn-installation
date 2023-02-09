@@ -1,4 +1,7 @@
 # OpenVPN Installation Guide
+
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1618272099483811840.svg?t=1)](https://www.murphysec.com/accept?code=9c6666ec7566192047671c4b45ca7bde&type=1&from=2&t=2)
+
 ###### on server [ubuntu 18.04 / 20.04]
 	1. sudo apt update
 	2. sudo apt upgrade
