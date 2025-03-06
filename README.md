@@ -11,32 +11,14 @@
 		* [enter new password]
 	6. su root
 		* [enter password]
-	7. passwd [user]
-		* [enter new password]
-	8. vi ~/../etc/ssh/sshd_config
-		* LoginGraceTime 5m
-		* PermitRootLogin yes
-		* StrictModes no
-		* PasswordAuthentication yes
-	9. /etc/init.d/ssh restart
 ###### reboot server && ssh into server as root
-	10. ssh root@[server-ip]
-	11. wget https://git.io/vpn -O openvpn-install.sh
-	12. bash openvpn-install.sh
+	7. ssh -i id_rsa.pem ubuntu@[server-ip]
+	8. wget https://git.io/vpn -O openvpn-install.sh
+	9. bash openvpn-install.sh
 		* DNS server -> Google
+  	10. cp [profile_name].ovpn /home/ubuntu/
 ###### on local machine
-	13. cd desktop
-	14. scp root@[server-ip]:~/[client-name].ovpn .
-
-# Note
-### The purpose of root login is only for convenience.
-###### For security purposes, use certificate to login, see modifications below
-	7. not needed
-	8. vi ~/../etc/ssh/sshd_config
-		* PermitRootLogin no
-		* StrictModes yes
-		* PasswordAuthentication no
-	10. ssh -i [path-to-certificate] [user]@[server-ip]
-###### run step 6 again before proceeding to the rest!
+	11. cd desktop
+	12. scp -i id_rsa.pem root@[server-ip]:~/[profile_name].ovpn .
 
 Happy Tunneling! 😀
