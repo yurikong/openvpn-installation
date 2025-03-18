@@ -20,7 +20,6 @@
 ###### on local machine
 	11. cd desktop
 	12. scp -i id_rsa.pem root@[server-ip]:~/[profile_name].ovpn .
- 	    [or]
-      	    scp -i id_rsa.pem ubuntu@[server-ip]:~/[profile_name].ovpn .
+ 	13. scp -i id_rsa.pem ubuntu@[server-ip]:~/[profile_name].ovpn . // if root doesn't work, try this!
 
 Happy Tunneling! 😀
