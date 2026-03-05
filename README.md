@@ -27,4 +27,17 @@
 	14. scp -i id_rsa.pem root@[server-ip]:~/[profile_name].ovpn .
  	15. scp -i id_rsa.pem ubuntu@[server-ip]:~/[profile_name].ovpn . // if root doesn't work, try this!
 
+###### Troubleshooting
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for 'id_rsa.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "id_rsa.pem": bad permissions
+```
+- chmod 400 id_rsa.pem
+
+
 Happy Tunneling! 😀
