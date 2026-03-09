@@ -41,3 +41,6 @@ Load key "id_rsa.pem": bad permissions
 
 
 Happy Tunneling! 😀
+
+###### VLESS + Reality
+- https://github.com/cholf5/random/issues/38
